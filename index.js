@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-const mqttBroker = mqtt.connect('mqtt://test.mosquitto.org');
+const mqttBroker = mqtt.connect('mqtt://15.229.68.123:32879');
 const mqttTopic = 'teste';
 
 // Configurar um listener para encaminhar mensagens do broker MQTT para a Unity via WebSocket
