@@ -26,7 +26,18 @@ const mqttTopics = [
     "CAE/S101/action/turn_on/hvac",
     "CAE/S101/action/turn_off/hvac",
     "CAE/S101/action/turn_on/lights",
-    "CAE/S101/action/turn_off/lights"
+    "CAE/S101/action/turn_off/lights",
+    "CAE/MED_QE_CAE_GERAL/potencia_ativa",
+    "CAE/MED_QE_CAE_GERAL/potencia_reativa",
+    "CAE/MED_AR_CONDICIONADO_CAE/potencia_ativa",
+    "CAE/MED_AR_CONDICIONADO_CAE/potencia_reativa",
+    "CAE/MED_QE_CAE_GERACAO/potencia_ativa",
+    "CAE/MED_QE_CAE_GERACAO/potencia_reativa",
+    "CAE/MED_GERACAO_CAE/potencia_ativa",
+    "CAE/MED_GERACAO_CAE/potencia_reativa",
+    "CAE/MED_GERAL_CAE/potencia_ativa",
+    "CAE/MED_GERAL_CAE/potencia_reativa",
+    
 ];
 
 // Configurar um listener para encaminhar mensagens do broker MQTT para a Unity via WebSocket
