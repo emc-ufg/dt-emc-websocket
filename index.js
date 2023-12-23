@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-const mqttBroker = mqtt.connect('mqtt://localhost:1883');
+const mqttBroker = mqtt.connect('mqtt://mosquitto:1883');
 //const mqttBroker = mqtt.connect('mqtt://test.mosquitto.org');
 
 const mqttTopics = [
