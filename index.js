@@ -21,6 +21,7 @@ const mqttTopics = [
     "CAE/S101/sensor/airquality",
     "CAE/S101/sensor/current",
     "CAE/S101/sensor/luminosidade",
+    "CAE/S101/sensor/pessoas",
     "CAE/S101/sensor/nox",
     "CAE/S101/sensor/voc",
     "CAE/S101/action/turn_on/hvac",
