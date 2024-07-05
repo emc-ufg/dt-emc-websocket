@@ -28,6 +28,7 @@ const mqttTopics = [
     "CAE/S101/action/turn_off/hvac",
     "CAE/S101/action/turn_on/lights",
     "CAE/S101/action/turn_off/lights",
+    "CAE/S101/control/lamp",
     "CAE/MED_QE_CAE_GERAL/potencia_ativa",
     "CAE/MED_QE_CAE_GERAL/potencia_reativa",
     "CAE/MED_AR_CONDICIONADO_CAE/potencia_ativa",
