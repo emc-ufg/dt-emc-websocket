@@ -29,6 +29,7 @@ const mqttTopics = [
     "CAE/S101/action/turn_on/lights",
     "CAE/S101/action/turn_off/lights",
     "CAE/S101/control/lamp",
+    "CAE/S101/control/lamp/s2",
     "CAE/MED_QE_CAE_GERAL/potencia_ativa",
     "CAE/MED_QE_CAE_GERAL/potencia_reativa",
     "CAE/MED_AR_CONDICIONADO_CAE/potencia_ativa",
@@ -50,9 +51,6 @@ mqttBroker.on('message', (topic, message) => {
         // Enviar a mensagem para todos os clientes conectados via WebSocket
         wss.clients.forEach((client) => {
             if (client.readyState === WebSocket.OPEN) {
-                if (topic == "CAE/S101/control/lamp") {
-                    topic = "CAE/S101/control/lamp/s2";
-                }
                 client.send(JSON.stringify({ topic, message: message.toString() }));
             }
         });
