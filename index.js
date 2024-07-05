@@ -50,6 +50,9 @@ mqttBroker.on('message', (topic, message) => {
         // Enviar a mensagem para todos os clientes conectados via WebSocket
         wss.clients.forEach((client) => {
             if (client.readyState === WebSocket.OPEN) {
+                if (topic == "CAE/S101/control/lamp") {
+                    topic = "CAE/S101/control/lamp/s2";
+                }
                 client.send(JSON.stringify({ topic, message: message.toString() }));
             }
         });
